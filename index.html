@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/img/codigo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"  rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="/img/codigo.png" alt="Computador con código">
+        <h1>Encriptador de Texto</h1>
+    </header>
+
+    <main class="container">
+        <section class="encriptar">
+            <textarea name="texto" class="texto" id="texto" cols="30" rows="10" placeholder="Ingrese el texto aquí."></textarea>
+
+            <div class="terminos">
+                <p>Solo letras minúsculas y sin acentos.</p>
+            </div>
+
+            <div class="botones">
+                <button type="button" class="btn-encriptar" onclick="encriptar()">Encriptar</button>
+                <button type="button" class="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="encriptado" id="encriptado">
+            <img src="./img/datos-encriptados.png" alt="Código encriptado" id="img">
+
+            <h2 class="titulo-mensaje">Ningún mensaje fue encontrado</h2>
+            <div class="texto-encriptado" id="texto-encriptado">
+                <p class="parrafo">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <button type="button" class="btn-copiar" onclick="copiarTexto()">Copiar</button>
+        </section>
+
+    </main>
+
+    <footer class="redes">
+        <a href="https://www.linkedin.com/in/jhonattan-lopez-1386752a8/" class="fa fa-linkedin"></a>
+        <a href="https://x.com/jhonanlop1" class="fa fa-twitter"></a>
+        <a href="https://github.com/Jhonanlop" class="fa fa-github"></a>
+        <p>Created by   Jhonanlop</p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
