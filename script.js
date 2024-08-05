@@ -8,7 +8,7 @@ function encriptar() {
                             .replace(/o/g, "ober")
                             .replace(/u/g, "ufat");
     actualizarResultado(textoEncriptado, true);
-}
+};
 
 function desencriptar() {
     let texto = document.getElementById("texto").value.toLowerCase();
@@ -18,7 +18,7 @@ function desencriptar() {
                                 .replace(/ober/g, "o")
                                 .replace(/ufat/g, "u");
     actualizarResultado(textoDesencriptado, false);
-}
+};
 
 function actualizarResultado(texto, isEncriptado) {
     let textoEncriptado = document.getElementById("texto-encriptado");
@@ -32,9 +32,9 @@ function actualizarResultado(texto, isEncriptado) {
         imagen.src = "./img/caja-fuerte-cerrada.png";
     } else {
         imagen.src = "./img/caja-fuerte-abierta.png";
-    }
+    };
     imagen.style.display = "block";
-}
+};
 
 function copiarTexto() {
     let texto = document.querySelector("#texto-encriptado .parrafo").innerText;
@@ -43,7 +43,7 @@ function copiarTexto() {
     }, function() {
         alert("Error al copiar el texto");
     });
-}
+};
 
 function verificarTexto() {
     let texto = document.getElementById("texto").value;
@@ -52,10 +52,10 @@ function verificarTexto() {
     let tituloMensaje = document.querySelector(".titulo-mensaje");
 
     if (texto === "") {
-        imagen.src = "/img/datos-encriptados.png";
+        imagen.src = "img/datos-encriptados.png";
         imagen.style.display = "block";
 
         tituloMensaje.textContent = "Ningún mensaje fue encontrado";
         textoEncriptado.innerHTML = `<p class="parrafo">Ingresa el texto que desees encriptar o desencriptar.</p>`;
-    }
-}
+    };
+};
